@@ -1,2 +1,2 @@
-# AnyQ_Manual
-AnyQ(ANswer Your Questions) 开源项目 手册
+# AnyQ_智能问答的一个非官方帮助手册
+数据来源为百度Google搜索，官方issues，以及本人的实验所得进行记录扩充
