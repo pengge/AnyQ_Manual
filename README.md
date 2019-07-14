@@ -66,4 +66,32 @@ curl 0.0.0.0:8999/anyq?question=NLP是什么
 
 
 
+# QA 
+1. 遇到
+```
 
+[ 50%] Built target lod_rank_table_op
+[ 50%] Built target pool_op
+[ 50%] Built target arg_max_op
+[ 50%] Built target lookup_table_op
+[ 50%] Built target print_op
+[ 50%] Built target bilinear_interp_op
+[ 50%] Built target load_op
+[ 50%] Built target one_hot_op
+Makefile:105: recipe for target 'all' failed
+make[3]: *** [all] Error 2
+CMakeFiles/extern_paddle.dir/build.make:111: recipe for target 'third_party/paddle/src/extern_paddle-stamp/extern_paddle-build' failed
+make[2]: *** [third_party/paddle/src/extern_paddle-stamp/extern_paddle-build] Error 2
+CMakeFiles/Makefile2:511: recipe for target 'CMakeFiles/extern_paddle.dir/all' failed
+make[1]: *** [CMakeFiles/extern_paddle.dir/all] Error 2
+Makefile:83: recipe for target 'all' failed
+make: *** [all] Error 2
+
+
+```
+回答：
+
+试下把源码里面paddle改成单线程编译：
+
+#cmake/external/paddle.cmake: line 14
+make -j16 -> make -j1
