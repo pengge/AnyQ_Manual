@@ -123,4 +123,11 @@ apt-get install vim
  
 ```
 
+4. run_server保持后台运行
 
+回答：
+```
+
+nohup ./run_server > /home/AnyQ/build/logs/server.log 2>&1 &
+ 
+```
