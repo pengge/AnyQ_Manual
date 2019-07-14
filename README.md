@@ -112,3 +112,15 @@ tar xzvf jdk-8u171-linux-x64.tar.gz
 加到系统路径
 export PATH=`pwd`/jdk1.8.0_171/bin:$PATH
 ```
+3. Docker里面无法使用vi
+```
+bash: vi: command not found
+```
+回答：
+```
+apt-get update
+apt-get install vim   
+ 
+```
+
+
