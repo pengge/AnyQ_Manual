@@ -67,7 +67,7 @@ curl 0.0.0.0:8999/anyq?question=NLP是什么
 
 
 # QA 
-1. 遇到
+1.  遇到
 ```
 
 [ 50%] Built target lod_rank_table_op
@@ -95,3 +95,20 @@ make: *** [all] Error 2
 
 #cmake/external/paddle.cmake: line 14
 make -j16 -> make -j1
+
+2. 运行solr报错找不到 java
+```
+
+```
+回答：
+
+```
+@xidiandb 官网下载，我们也提供了暂存地址
+
+下载
+wget http://anyq.bj.bcebos.com/jdk-8u171-linux-x64.tar.gz
+解压
+tar xzvf jdk-8u171-linux-x64.tar.gz
+加到系统路径
+export PATH=`pwd`/jdk1.8.0_171/bin:$PATH
+```
